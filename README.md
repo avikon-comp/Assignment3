@@ -1,15 +1,11 @@
 A) Project Overview
 This Java API manages a digital game store with PostgreSQL. It supports games, users, and libraries
 Entities:Game (abstract) – base for all games
-
-         DigitalGame – digital games with download size
-
-         PhysicalGame – physical games with disc count
-
-         User – store customers
-
-         Library – user game collections
-
+DigitalGame – digital games with download size
+PhysicalGame – physical games with disc count
+User – store customers
+Library – user game collections
+         
 B) OOP Design Documentation
 Abstract Class and Subclasses
 Game – abstract class with common fields
