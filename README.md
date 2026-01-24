@@ -5,7 +5,7 @@ DigitalGame – digital games with download size
 PhysicalGame – physical games with disc count
 User – store customers
 Library – user game collections
-         
+
 B) OOP Design Documentation
 Abstract Class and Subclasses
 Game – abstract class with common fields
