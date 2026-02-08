@@ -48,6 +48,7 @@ public class Main {
             }
         }
         scanner.close();
+
     }
 
     private static void printMenu() {
@@ -67,9 +68,12 @@ public class Main {
         System.out.println("=".repeat(40));
     }
 
+
     private static void showAllGames() throws Exception {
         System.out.println("\nВсе игры:");
         List<Game> games = gameService.getAllGames();
+        System.out.println("\n=== LAMBDA SORTING BY PRICE ===");
+        games.sort((g1, g2) -> Double.compare(g1.getPrice(), g2.getPrice()));
         for (Game game : games) {
             System.out.println("   " + game);
         }
@@ -236,4 +240,8 @@ public class Main {
         System.out.print(prompt);
         return scanner.nextLine().trim();
     }
+
+
+
+
 }
